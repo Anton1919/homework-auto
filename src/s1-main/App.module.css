@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+  .App {
+    --header_height: 60px;
+      padding:0 70px;
+      position: relative;
+}
+
+.hw {
+    padding: 20px;
+}
+
+.hwTitle {
+    padding: 50px 0;
+}

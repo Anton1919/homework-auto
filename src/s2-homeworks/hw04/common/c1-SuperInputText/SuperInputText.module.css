@@ -1,0 +1,32 @@
+.input:focus {
+    border: 1px solid #3d3dce;
+}
+
+.input {
+    min-width: 372px;
+    min-height: 36px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.superInput {
+    border: 1px solid #5454c1;
+}
+
+.errorInput {
+    border: 1px solid #CC1439;
+}
+
+.errorInput:focus {
+    border: 2px solid #CC1439;
+}
+
+.error {
+    color: #CC1439;
+}
