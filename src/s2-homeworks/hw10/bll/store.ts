@@ -1,6 +1,7 @@
 import { loadingReducer } from './loadingReducer'
 import { combineReducers, legacy_createStore } from 'redux'
 import { themeReducer } from '../../hw12/bll/themeReducer'
+import {TypedUseSelectorHook, useSelector} from "react-redux";
 
 const reducers = combineReducers({
     loading: loadingReducer, // hw10
@@ -10,6 +11,8 @@ const reducers = combineReducers({
 const store = legacy_createStore(reducers)
 
 export default store
+
+export const useAppSelector: TypedUseSelectorHook<AppStoreType> = useSelector
 
 export type AppStoreType = ReturnType<typeof reducers>
 
