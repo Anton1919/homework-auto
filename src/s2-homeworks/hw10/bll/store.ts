@@ -12,8 +12,6 @@ const store = legacy_createStore(reducers)
 
 export default store
 
-export const useAppSelector: TypedUseSelectorHook<AppStoreType> = useSelector
-
 export type AppStoreType = ReturnType<typeof reducers>
 
 // @ts-ignore
