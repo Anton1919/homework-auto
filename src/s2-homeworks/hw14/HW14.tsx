@@ -36,8 +36,6 @@ const HW14 = () => {
 			.then((res) => {
 				// делает студент
 				// сохранить пришедшие данные
-				console.log(res)
-				console.log(value)
 				if (res) {
 					setTechs(res.data.techs)
 				}
@@ -53,8 +51,6 @@ const HW14 = () => {
 		const findQuery: { find?: string } = value ? {find: value} : {}
 		const {find, ...lastQueries} = Object.fromEntries(searchParams)
 		setSearchParams({...lastQueries, ...findQuery})
-
-
 		//
 	}
 
