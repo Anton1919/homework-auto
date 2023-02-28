@@ -69,8 +69,8 @@ const HW15 = () => {
 		setPage(newPage)
 		setCount(newCount)
 
-		sendQuery({page: newPage, count: newCount})
-		setSearchParams({page: String(newPage), count: String(newCount)})
+		sendQuery({page: newPage, count: newCount, sort})
+		setSearchParams({page: String(newPage), count: String(newCount), sort})
 	}
 
 	const onChangeSort = (newSort: string) => {
@@ -80,8 +80,8 @@ const HW15 = () => {
 		setPage(1)
 		// setPage(1) // при сортировке сбрасывать на 1 страницу
 
-		sendQuery({page: 1, count: count})
-		setSearchParams({page: "1", count: String(count)})
+		sendQuery({page: 1, count: count, sort: newSort})
+		setSearchParams({sort: newSort, page: "1", count: String(count)})
 		//
 	}
 
