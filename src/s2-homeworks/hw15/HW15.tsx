@@ -82,7 +82,6 @@ const HW15 = () => {
 
 		sendQuery({page: 1, count: count})
 		setSearchParams({page: "1", count: String(count)})
-
 		//
 	}
 
