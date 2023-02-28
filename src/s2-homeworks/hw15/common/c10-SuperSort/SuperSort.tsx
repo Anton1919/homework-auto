@@ -1,5 +1,4 @@
 import React from 'react'
-
 // добавить в проект иконки и импортировать
 const downIcon = '[\\/]'
 const upIcon = '[/\\]'
